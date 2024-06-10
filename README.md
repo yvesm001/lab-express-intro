@@ -72,13 +72,19 @@ Welcome to the ExpressJS lab! In this exercise, you'll be creating a basic Expre
     const logger = morgan("dev");
     ```
 
-11. **Define a `PORT` variable**
+11. **Import data from db.json file**
+
+    ```js
+    const data = require("./db.json");
+    ```
+
+12. **Define a `PORT` variable**
 
     ```js
     const PORT = 8080;
     ```
 
-12. **Tell the app to listen to the port and add a callback with a console.log for feedback**
+13. **Tell the app to listen to the port and add a callback with a console.log for feedback**
 
     ```js
     app.listen(PORT, () => {
@@ -86,13 +92,13 @@ Welcome to the ExpressJS lab! In this exercise, you'll be creating a basic Expre
     });
     ```
 
-13. **Use the logger as middleware**
+14. **Use the logger as middleware**
 
     ```js
     app.use(logger);
     ```
 
-14. **Run the server**
+15. **Run the server**
     ```sh
     npm run dev
     ```
