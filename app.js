@@ -50,7 +50,7 @@ app.get("/people/country/:country", async (req, res) => {
 app.get("/people/age/:age", async (req, res) => {
   const { age } = req.params;
 
-  const filteredByAge = data.filter((person) => person.age.toString() === age);
+  const filteredByAge = data.filter((person) => person.age.toString() >= age);
 
   res.json(filteredByAge);
 });
