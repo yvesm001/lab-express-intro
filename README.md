@@ -124,12 +124,12 @@ Now that your server is set up, it's time to define some routes.
 
    - Create a route that responds to GET requests to `/people/:country`. Use the country from the request parameters to filter and return the people from that country.
 
-5. **Define a route `/people/age/:age` to get all people that match or are over a certain age**
+5. **Define a route `/people/:age` to get all people that match or are over a certain age**
 
-   - Create a route that responds to GET requests to `/people/age/:age`. Use the age from the request parameters to filter and return the people who are of that age or older.
+   - Create a route that responds to GET requests to `/people/:age`. Use the age from the request parameters to filter and return the people who are of that age or older.
 
-6. **Define a route `/people/profession/:profession` to get all people that match a profession**
-   - Create a route that responds to GET requests to `/people/profession/:profession`. Use the profession from the request parameters to filter and return the people with that profession.
+6. **Define a route `/people/:profession` to get all people that match a profession**
+   - Create a route that responds to GET requests to `/people/:profession`. Use the profession from the request parameters to filter and return the people with that profession.
 
 ## Testing Your Routes
 
